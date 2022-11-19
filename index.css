@@ -1,0 +1,21 @@
+*{box-sizing: border-box;}
+#cube-box{position: absolute;top: 35%;left: 45%;}
+#cube{transform-style: preserve-3d;transition: 1s;}
+.box-item{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  background: rgb(33, 37, 41);
+  color: #0d6efd;
+  border: 5px solid #0d6efd;
+  border-radius: 5px;
+  
+}
+#front_element  {transform:translateX(0px)    translateY(0px)    translateZ(100px) rotateX(0deg)  rotateY(0deg)   rotateZ(0deg)}
+#back_element   {transform:translateX(0px)    translateY(0px)    translateZ(-100px) rotateX(0deg)  rotateY(0deg)   rotateZ(0deg)}
+#right_element  {transform:translateX(100px)  translateY(0px)    translateZ(0px)  rotateX(0deg)  rotateY(90deg)   rotateZ(0deg)}
+#left_element   {transform:translateX(-100px) translateY(0)      translateZ(0px) rotateX(0deg) rotateY(-90deg) rotateZ(0deg)}
+#bottom_element {transform:translateX(0px)    translateY(100px)  translateZ(0px)  rotateX(90deg)  rotateY(0deg)   rotateZ(0deg)}
+#top_element    {transform:translateX(0px)    translateY(-100px) translateZ(0px)  rotateX(-90deg)  rotateY(0deg)   rotateZ(0deg)}
